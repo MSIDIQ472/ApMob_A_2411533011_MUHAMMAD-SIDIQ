@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'Praktikum 04/dashboard_screen.dart';
+import 'Praktikum 05/login_screen.dart';
+import 'Praktikum 05/main_screen.dart';
+import 'Praktikum 05/add_transaction_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Expanse Tracker - modul 4',
-      theme: ThemeData(primarySwatch: Colors.red),
-      home: const DashboardScreen(),
+      title: 'Expense Tracker Final',
+      theme: ThemeData(primarySwatch: Colors.amber),
+      initialRoute: '/login',
+      routes: {
+        '/login': (context) => const LoginScreen(),
+        '/': (context) => const MainScreen(),
+        '/add': (context) => const AddTransactionScreen(),
+      },
     );
   }
 }
