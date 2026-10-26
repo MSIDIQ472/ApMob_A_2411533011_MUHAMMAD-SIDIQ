@@ -1,17 +1,28 @@
-# flutter_application_1
+# Aplikasi Keuangan
 
-A new Flutter project.
+Aplikasi Flutter pencatat pemasukan dan pengeluaran dengan registrasi akun,
+login, ringkasan saldo, riwayat transaksi, dan profil. Data akun dan transaksi
+disimpan secara lokal menggunakan SQLite.
 
-## Getting Started
+## Menjalankan aplikasi
 
-This project is a starting point for a Flutter application.
+Pastikan Flutter SDK terpasang, lalu jalankan:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Pengujian
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter test
+```
+
+## Membuat APK Android
+
+```bash
+flutter build apk --release
+```
+
+APK hasil build tersedia di `build/app/outputs/flutter-apk/app-release.apk`.
